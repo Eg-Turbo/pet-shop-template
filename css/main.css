@@ -1,0 +1,181 @@
+:root {
+    --orange-color:#e67e22;
+    --black-color:#130f40;
+}
+.landding {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../image/home_bg_img.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.landding::before {
+    content: "";
+    background-image: url(../image/bottom_wave.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom: -19px;
+    left: 0;
+    width: 100%;
+    height: 160px;
+
+}
+h1 {
+    font-size: 60px;
+}
+span{
+    color: var(--orange-color);
+}
+.button {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    background-color: transparent;
+    color: white;
+    padding: 10px 30px;
+    border: 2px solid white;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 0;
+    height: 0;
+    transition: 0.2s linear;
+}
+.button:hover {
+    color: black;
+}
+.button:hover::before {
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    height: 100%;
+    width: 100%;
+
+    z-index: -1;
+    
+}
+.about .button{
+    border-color: black;
+    color: #333;
+
+}
+.about .button:hover {
+    color: white;
+}
+.about .button:hover::before{
+    background-color: var(--black-color);
+}
+.link-img img{
+    transition: 0.3s;
+}
+.link-img:hover img{
+    transform: rotate(13.5deg);
+}
+.product .img {
+    width: fit-content;
+}
+.product .icons {
+    top: 0;
+    right: -60px;
+    transition: 0.3s;
+    z-index: 1;
+}
+.product .box .img img {
+    transition: 0.3s;
+    z-index: -1;
+}
+.product .box .img:hover .icons {
+    right: 1.5rem;
+}
+.product .box .img:hover img {
+    transform: scale(1.1);
+}
+.product .icons svg:hover {
+    color: white;
+    background-color: var(--orange-color) !important;
+}
+.services .button{
+    border-color: black;
+    color: #333;
+
+}
+.services .button:hover {
+    color: white !important;
+}
+.services .button:hover::before{
+    background-color: var(--black-color);
+}
+.services .box {
+    background-color: #eee  ;
+}
+.services .icon {
+    background-color: var(--orange-color);
+    
+}
+.choose .box {
+    background-color: #eee;
+}
+.choose .icon {
+    color: var(--orange-color);
+}
+.choose .button{
+    border-color: black;
+    color: #333;
+    background-color: white;
+
+}
+.choose .button:hover {
+    color: white !important;
+}
+.choose .butt {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.choose .button:hover::before{
+    background-color: var(--black-color);
+}
+
+.contact .cust {
+    border:none;
+    border-bottom: 2px solid black;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+}
+.contact .cust:focus {
+    box-shadow: none;
+}
+.contact .button{
+    border-color: black;
+    color: #333;
+    background-color: white;
+
+}
+.contact .button:hover {
+    color: white !important;
+}
+.contact .butt {
+    position: absolute;
+    right: 1.5rem;
+    bottom: 0;
+    transform: translateY(50%);
+}
+.contact .button:hover::before{
+    background-color: var(--black-color);
+}
+footer {
+    background-image: url(../image/footer_background.jpg);
+}

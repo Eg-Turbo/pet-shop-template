@@ -11,6 +11,12 @@ body {
     overflow-y:auto;
     overflow-x: hidden;
 }
+.flash {
+    animation: flash 0.4s 1;
+}
+.flash-1 {
+    animation: flash-1 0.4s 1;
+}
 .items-list li {
     margin-bottom: 1rem;
 }
@@ -259,4 +265,26 @@ span{
 }
 footer {
     background-image: url(../image/footer_background.jpg);
+}
+@keyframes flash {
+    0%{
+        color: black;
+    }
+    50% {
+        color: orangered;
+    }
+    100%{
+        color: black;
+    }
+}
+@keyframes flash-1 {
+    0%{
+        color: black;
+    }
+    50% {
+        color: orangered;
+    }
+    100%{
+        color: black;
+    }
 }
